@@ -3,7 +3,7 @@ import telebot
 import time
 
 BOT_TOKEN = os.environ['BOT_TOKEN']
-bot = telebot.TleBot(BOT_TOKEN)  # ← ТОЛЬКО ТАК!
+bot = telebot.TeleBot(BOT_TOKEN)  # ← TeleBot, а не TleBot!
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
