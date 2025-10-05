@@ -2,8 +2,8 @@ import os
 import telebot
 import time
 
-BOT_TOKEN = os.environ['BOT_TOKEN']  # Только так!
-bot = telebot.TeleBot(8362716922:AAGxYr0vajDXcOMIMlmLITvwEtetoesoOsU)
+BOT_TOKEN = os.environ['BOT_TOKEN']
+bot = telebot.TeleBot(8362716922:AAGxYr0vajDXcOMIMlmLITvwEtetoesoOsU)  # ← ИСПРАВЬ ЭТУ СТРОКУ!
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
